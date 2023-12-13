@@ -1,0 +1,53 @@
+*{
+    text-align: center;
+    font-family: 'Hahmlet', serif;
+}
+
+html{
+    background-color: #b3a191;
+    font-size: 16px;
+}
+
+body{
+    width: 640px;
+    margin: auto;
+}
+
+h1{
+    font-size: 48px;
+    color: rgb(42, 12, 12)
+}
+
+.introduce #first{
+    font-weight: 500;
+    font-size: 30px;
+    color: rgb(69, 20, 20);
+}
+
+img{
+    width: 250px;
+    height: 250px;
+    border-radius: 150px;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+#funfacts{
+    border: 2px solid rgb(42, 12, 12) ;
+    border-radius: 20px;
+}
+
+#funfacts h2{
+    font-weight: 700;
+    color: rgb(42, 12, 12);
+}
+
+#copy{
+    font-size: 10px;
+}
+
+
+
+/* 글꼴, 색상바꾸기 자기가 원하는 스타일로 바꾸기*/

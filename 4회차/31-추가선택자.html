@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자 더 알아보기</title>
+    <style>
+        [width $= "0"]{
+            border: 5px dashed red;
+        }
+
+        body p{
+            color: blue;
+        }
+
+        #sam + p{
+            color: orange;
+        }
+        
+    </style>
+</head>
+<body>
+    <img src="/3회차/images/streetcat2.jpeg" width="120" alt="고양이">
+    <img src="/3회차/images/streetcat2.jpeg" width="120">
+    <img src="/3회차/images/streetcat2.jpeg" width="120" id="sam">
+    <p>길고양이의 모습입니다.</p>
+    <p>고양이는 사랑스럽습니다.  </p>
+    <p>고양이는 귀엽습니다. 자기도 귀여운걸 아는것같습니다. </p>
+</body>
+</html>

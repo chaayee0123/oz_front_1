@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="X-UA-Compatible" content="IE=edge">
+    <title>설문조사 양식</title>
+</head>
+<body>
+    <header>
+        <h1>설문조사 양식</h1>
+        <p>모든 항목에 빠짐없이 체크해주십시요.</p>
+    </header>
+    <hr>
+    <main>
+        <form>
+            <fieldset>
+                <legend>개인정보</legend>
+                <label for="name">이름</label>
+                <input type="text" name="name" 
+                id="name" placeholder="본명을 입력하세요">
+                <br>
+                <label for="email">이메일</label>
+                <input type="text" name="email" 
+                id="email" placeholder="메일 주소 쓰세요">
+            </fieldset>
+            <fieldset>
+                <legend>설문</legend>
+
+                <p>반려동물을 키우십니까?</p>
+                    <input type="radio" id="yes" name="animal">
+                    <label for="yes">네</label>
+                    <input type="radio" id="no" name="animal">
+                    <label for="no">아니오</label>
+
+                <p>키우신다면 어떤 반려동물을 키우십니까? 모두 고르시오.</p>
+                <input type="checkbox" id="dog" name="type">
+                <label for="dog">강아지</label>
+                <input type="checkbox" id="cat" name="type">
+                <label for="cat">고양이</label>
+                <input type="checkbox" id="hamster" name="type">
+                <label for="hamster">햄스터</label>
+                <input type="checkbox" id="rabbit" name="type">
+                <label for="rabbit">토끼</label>
+                <input type="checkbox" id="other" name="type">
+                <label for="other">그 외</label>
+
+
+                <p>반려동물을 선택할 때 가장 중요하게 생각하는 것은 무엇입니까? 모두 고르시오.</p>
+                <input type="checkbox" id="size" name="house">
+                <label for="size">집 크기</label>
+                <input type="checkbox" id="money" name="house">
+                <label for="money">돈</label>
+                <input type="checkbox" id="family" name="house">
+                <label for="family">가족</label>
+                <input type="checkbox" id="infra" name="house">
+                <label for="infra">주변 시설</label>
+
+                
+            </fieldset>
+            <fieldset>
+                <legend>기타 의견</legend>
+                <textarea rows="3" cols="30" name="comment"></textarea>
+            </fieldset>
+            <input type="submit">
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <p>입력하느라 수고하셨습니다.</p>
+    </footer>
+</body>
+</html>
