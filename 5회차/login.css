@@ -1,0 +1,109 @@
+.container{
+    width: 350px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid rgb(211, 237, 172);
+    border-radius: 10px;
+    background-color: rgb(211, 237, 172);
+    box-shadow: 10px 10px 0px 5px rgb(148, 173, 110), 15px 15px 0px 10px rgb(192, 179, 0), 
+    20px 20px 0px 15px rgb(63, 78, 40), 25px 25px 0px 20px rgb(173, 116, 110); 
+}
+
+#email_2{
+    width: 250px;
+    height: 30px;
+    border: 3px solid rgb(148, 173, 110); 
+    border-radius: 5px;
+}
+
+#name_2{
+    width: 250px;
+    height: 30px;
+    border: 3px solid rgb(148, 173, 110); 
+    border-radius: 5px;
+
+}
+
+#password__id{
+    width: 250px;
+    height: 30px;
+    border: 3px solid rgb(148, 173, 110); 
+    border-radius: 5px;
+
+}
+
+
+#password_2__id{
+    width: 250px;
+    height: 30px;
+    border: 3px solid rgb(148, 173, 110); 
+    border-radius: 5px;
+
+}
+
+#tel{
+    width: 50px;
+    height: 30px;
+    border: 3px solid rgb(148, 173, 110); 
+    border-radius: 5px;
+
+}
+
+#tel_2{
+    width: 100px;
+    height: 30px;
+    border: 3px solid rgb(148, 173, 110); 
+    border-radius: 5px;
+}
+
+#tel_3{
+    width: 100px;
+    height: 30px;
+    border: 3px solid rgb(148, 173, 110); 
+    border-radius: 5px;
+}
+
+#valid_bt{
+    width: 100px;
+    text-align: center;
+    border: 3px solid rgb(148, 173, 110); 
+    border-radius: 5px;
+}
+
+#valid_bt:active{
+    background-color: rgb(132, 135, 126);
+}
+
+#timer_bt{
+    width: 100px;
+    border: 3px solid rgb(148, 173, 110); 
+    border-radius: 5px;
+
+}
+
+#region_opt{
+    width: 250px;
+    height: 30px;
+    border: 3px solid rgb(148, 173, 110); 
+    border-radius: 5px;
+
+}
+
+#gender{
+
+}
+
+#join_bt_2{
+    width: 250px;
+    height: 30px;
+    border: 3px solid rgb(148, 173, 110); 
+    border-radius: 5px;
+}
+
+#join_bt_2:active{
+    background-color: rgb(132, 135, 126);
+}
