@@ -1,0 +1,30 @@
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+}
+
+.chat-screen{
+    height: calc(100% - 120px);
+}
+
+.screen-bar{
+    width: 100%;
+    height: 30px;
+    float: left;
+    display: flex;
+    flex-direction: row;
+}
+
+.date{
+    display: inline;
+    border: 2px solid black;
+}
+
+.weather{
+    display: inline;
+}
