@@ -1,30 +1,77 @@
 
+
 html{
-    height: 100%;
+    width: 500px;
+    height: 800px;
 }
 
 body{
     height: 100%;
-    margin: 0;
+    margin: 0px;
+    padding: 10px;
+    border: 4px solid black;
 }
 
-.chat-screen{
-    height: calc(100% - 120px);
-}
-
-.screen-bar{
-    width: 100%;
-    height: 30px;
-    float: left;
+.container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: antiquewhite;
+}
+
+.diary-screen{
+    border: 4px solid black;
+}
+
+.diary-screen-bar{
+    height: calc(100% - 120px);
 }
 
 .date{
     display: inline;
-    border: 2px solid black;
+    letter-spacing: 4px;
+    padding-left: 10px;
+
 }
+
 
 .weather{
     display: inline;
+    width: 429px;
+    letter-spacing: 4px;
+}
+
+.diary-screen-title{
+    padding-left: 10px;
+}
+    
+#hr2{
+    width: 90%;
+} 
+
+#cat{
+    display: block;
+    width: 90%;
+    height: 360px;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+table{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    border: 4px solid black;
+    border-collapse: collapse;
+    background-color: white;
+    text-align: center;
+}
+
+td{
+    border: 4px solid black;
+
 }
