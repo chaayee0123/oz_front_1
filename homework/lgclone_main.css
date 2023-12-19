@@ -1,0 +1,56 @@
+.infp{
+    width: 100%;
+    height: 40rem;
+}
+#lg-trom{
+    width: 100%;
+    height: 40rem;
+}
+.notice{
+    max-width: 90rem;
+    justify-content: center;
+    margin: auto;
+}
+.notice-contain{
+    width: 100%;
+}
+.notice-container{
+    float: left;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 5rem 12rem 3rem 12rem;
+}
+.notice-content{
+    width: 50px;
+    height: 50px;
+    min-width: 5rem;
+    min-height: 5rem;
+}
+.notice-content-name{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.banner{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(212, 116, 116);
+    margin: 0 2.75rem 0rem 4rem ;
+    padding: 1.75rem 1.5rem 1.75rem 2.0625rem;
+}
+.banner-text{
+    line-height: 1.3;
+    font-size: 1.25rem;
+    font-weight: 900;
+}
+.banner-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin: 0;
+    padding: 0.5rem 0.625rem;
+    line-height: 1.4;
+    background-color: white;
+}
