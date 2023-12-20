@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../htmlcss-study"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "htmlcss-study"
+	}
+}
