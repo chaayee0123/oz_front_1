@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../6회차"
+		},
+		{
+			"path": "../7회차"
+		},
+		{
+			"path": "../5회차"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "homework"
+	}
+}
