@@ -1,0 +1,63 @@
+.chat-screen-text{
+    padding: 0;
+    list-style-type: none;
+}
+
+.chat-screen-text > .text{
+    background-color: white;
+    width: 280px;
+    height: 50px;
+    margin: 0 0 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    line-height: 30px;
+    position: relative;
+    left: 20px;
+}
+
+
+.chat-screen-text > .text::after{
+    content: "";
+    border-right: 16px solid white;
+    border-bottom: 16px solid transparent;
+    position: absolute;
+    top: 10px;
+    left: -10px;
+}
+
+
+.chat-screen-text > .text:hover{
+    background-color: rgb(253, 238, 217);
+    transition: background-color 1500ms 200ms ease-in;
+}
+
+.chat-screen-text > .text:hover::after{
+    border-right: 16px solid rgb(253, 238, 217);
+    transition: border-right 1500ms 200ms ease-in;
+}
+.chat-screen-text2{
+    padding: 0;
+    list-style-type: none;
+}
+
+.chat-screen-text2 > .text2{
+    background-color: white;
+    width: 280px;
+    height: 50px;
+    margin: 0 0 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    line-height: 30px;
+    position: relative;
+    left: 950px;
+}
+
+
+.chat-screen-text2 > .text2::after{
+    content: "";
+    border-left: 16px solid white;
+    border-top: 16px solid transparent;
+    position: absolute;
+    top: 10px;
+    left: 280px;
+}

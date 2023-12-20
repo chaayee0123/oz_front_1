@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>채팅방 만들기</title>
+    <link href="03-말풍선추가과제chat.css" rel="stylesheet">
+    <link href="03-말풍선추가과제text.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <main class="chat-screen">
+            <section class="chat-screen_bar">
+                <div class="user">
+                    <div class="user_column">
+                        <div class="user__pic"></div>
+                    </div>
+                    <div class="user_column">
+                        <p class="user__nick">친구</p>
+                        <p class="user__count">2</p>
+                    </div>
+                </div>
+            </section>
+            <ul class="chat-screen-text">
+                <li class="text">친구야</li>
+                <li class="text">밥이나 먹자</li> 
+                <li class="text">어디서 만날까</li>
+                <li class="text">뭐 먹고싶어?</li> 
+                <li class="text">난 치킨</li>
+                <li class="text">아니면 스파게티</li> 
+                <li class="text">마라탕도 좋아</li>
+                <li class="text">마라탕 저기 홍대가 맛있어</li> 
+                <li class="text">몇시에 만나지?</li> 
+                <li class="text">마라탕먹자</li> 
+                <li class="text">학원 몇시에 끝나?</li>
+            </ul>
+            <ul class="chat-screen-text2">
+                <li class="text2">그럼 홍대</li>
+                <li class="text2">7시</li> 
+                <li class="text2">끝나고 가면 8시</li>
+                <li class="text2">그럼 8시에 가게 앞에서 만나</li> 
+                <li class="text2">오키</li>
+                <li class="text2">그거에 후식은?</li> 
+                <li class="text2">나 케이크땡겨</li>
+                <li class="text2">초코케이크?</li>
+                <li class="text2">그 옆에 맛집있음</li> 
+                <li class="text2">거기루 갑시다</li> 
+                <li class="text2">이따봐~</li> 
+            </ul>
+        </main>
+
+
+        <form class="chat-form">
+            <section class="chat-form_field">
+                <textarea class="chat-form_msg"></textarea>
+                <input type="submit" value="전송" class="chat-form__bt">
+            </section>
+        </form>
+    </div>
+</body>
+</html>
