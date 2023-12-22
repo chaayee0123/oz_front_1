@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4의 배수 5개씩 출력하기</title>
+</head>
+<body>
+    <div id="container"></div>
+
+    <script>
+        const container = document.getElementById("container")
+        const p = document.createElement("p")
+        var str="";
+        var a = 100;
+        var count = 0;
+        while(a<=500) {
+            a++;
+            if((a % 4) == 0){
+                str += a + "";
+                count++;
+            if(count % 5 == 0){
+            str += "<br>"
+           }
+        }
+     }
+     p.innerHTML = str;
+     container.append(p);
+    </script>
+</body>
+</html>

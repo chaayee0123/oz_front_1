@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 페이지 변환</title>
+    <style>
+        .container{
+            width: 800px;
+            height: 500px;
+            overflow: hidden;
+            margin: auto;
+        }
+        .black {
+            background-color: black;
+        }
+        .container > .images{
+            display: flex;
+            width: 800px;
+            transition: transform 0.5s ease;
+        }
+        img {
+            width: 800px;
+            height: 500px;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="images" id="images">
+            
+                <img src="images/pic1.png">
+           
+            
+                <img src="images/pic2.png">
+            
+            
+                <img src="images/pic3.png">
+            
+                <img src="images/pic4.png">
+            
+        </div>
+    </div>
+
+            <button id="black" type="button" onclick="
+            document.querySelector('body').style.backgroundColor='black';
+            document.querySelector('body').style.color='black';">🖤</button>
+            <button class="img1" type="button" >화</button>
+            <button class="img2" type="button">이</button>
+            <button class="img3" type="button">팅</button>
+            <button class="img4" type="button">다음</button>
+
+
+    
+
+    <script>
+
+        function  toggle(){
+
+        }
+        // const backgroundBTN = document.querySelector('#black');
+        // const img1BTN = document.querySelector(".img1");
+        // const img2BTN = document.querySelector(".img2");
+        // const img3BTN = document.querySelector(".img3");
+        // const img4BTN = document.querySelector(".img4");
+        // const wrapper = document.querySelector(".images");
+        // const images = document.querySelector(".images img");
+        // let index = 0;
+
+        // backgroundBTN.addEventListener('click', function(){
+        //     black.classList.toggle('black');
+        // });
+        // img1BTN.addEventListener('click', function(){
+        //     index = 0;
+        //     changeSlide();
+
+        // });
+        // img2BTN.addEventListener('click', function(){
+        //     index = 1;
+        //     changeSlide();
+        // });
+        // img3BTN.addEventListener('click', function(){
+        //     index = 2;
+        //     changeSlide();
+        // });
+        // img4BTN.addEventListener('click', function(){
+        //     index = (index + 1) % images.length;
+        //     changeSlide();
+        // });
+
+        // function changeSlide() {
+        //     const offset = -index * 500;
+        //     wrapper.style.trasition = `translateX(${offset}px)`;
+        // }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미스테리 숫자 맞추기</title>
+    <style>
+        body{
+            box-sizing: border-box;
+            width: 100%;
+            height: 500px;
+            margin: auto;
+            text-align: center;
+        }
+        #inputNumber{
+            width: 180px;
+            height: 30px;
+        }
+        #startbutton{
+            width: 100px;
+            height: 30px;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Mystery Number 맞추기</h1>
+        <br>
+        <h3>1부터 100사이의 숫자를 입력하세요!</h3>
+
+        <div class="inputArea">
+            <input type="number" id="inputNumber">
+            <button id="startbutton">뚜둥!</button>
+        </div>
+
+</div>
+    <script>   
+
+        let comAnswer = Math.floor(Math.random() * 100) +1;
+        let count = 1;
+        let userAnswer = -1;
+        const p = document.createElement("p");
+        p.style.color = "white";
+
+        while(userAnswer != comAnswer) {
+            userAnswer = parseInt(input);
+
+            if( userAnswer < comAnswer){
+                p.textContent = "힌트 : 숫자가 너무 작아요! 조금 더 높여보세요!";
+            } else if(userAnswer > comAnswer){
+                p.textContent = "힌트 : 숫자가 커요! 줄여볼까요?";
+            } else {
+                alert("👏 👏 👏 정답입니다!!");
+                break;
+            }
+            count++;
+        }
+
+        // let randomNumber = 0;
+        // let inputNum = document.getElementById("inputNumber");
+        // let startbtn = document.getElementById("startbutton");
+        // let gameEnd = false;
+        // let inputNumlist = [];
+
+        // function computerNum(){
+        //     randomNumber = Math.floor(Math.random()*100)+1;
+        //     console.log(randomNumber);
+        // }
+        // startbtn.addEventListener("click", start);
+
+        // function start(){
+        //     let inputNumValue = inputNum.value;
+
+        //     if(inputNumValue > 100 || inputNumValue < 1){
+        //         result.textContent = "1부터 100까지 숫자만 입력해주세요."
+        //         return;
+        //     }
+
+        //     if(inputNumlist.includes(inputNumValue)){
+        //         result.textContent = "이미 입력한 숫자입니다."
+        //         return;
+        //     }
+
+        //     if(inputNumValue < randomNumber){
+        //         result.textContent = "힌트 : 숫자가 너무 작아요! 조금 더 높여보세요!";
+        //     } else if(inputNumValue > randomNumber){
+        //         result.textContent = "힌트 : 숫자가 커요! 줄여볼까요?";
+        //     } else {
+        //         result = prompt("👏 👏 👏 정답입니다!!");
+        //         gameEnd = true;
+        //     }
+        //     inputNumList.push(inputNumValue);
+        // }
+        // computerNum();
+    </script>
+</body>
+</html>

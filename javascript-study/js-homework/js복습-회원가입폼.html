@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link href="js복습-회원가입폼.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header id="head">
+            <h2>OZ초격차 회원가입</h2>
+        </header>
+        <main>
+            <div class="email">
+                <input type="text" id="email_2" placeholder="이메일을 입력하세요."> 
+            </div>
+            <br>
+            <div class="name">
+                <input type="text" id="name_2" placeholder="이름을 입력하세요."> 
+            </div>
+            <br>
+            <div class="password">
+                <input type="password" id="password__id" placeholder="비밀번호를 입력하세요."> 
+            </div>
+            <br>
+            <div class="password_2">
+                <input type="password" id="password_2__id" placeholder="비밀번호를 다시 입력하세요."> 
+            </div>
+            <br>
+            
+            <div class="number">
+                <input type="tel" id="tel" placeholder="010"> - <input type="tel" id="tel_2" placeholder="1234"> - <input type="tel" id="tel_3" placeholder="5678">
+            </div>
+            <div class="valid">
+                <label for="valid_bt" id="num">000000</label>
+                <input type="submit" id="valid_bt" value="인증번호 전송">
+            </div> 
+            <br>
+            <div class="timer">
+                <label for="timer_bt">3:00</label>
+                <input type="button" id="timer_bt" disabled value="인증 완료"> 
+            </div>
+            <br>
+            <div id="region">
+                <select id="region_opt" onchange="changeVlaue(this)">
+                    <option selected>-지역을 선택하세요-</option>
+                    <option>서울</option>
+                    <option>경기도</option>
+                    <option>대구</option>
+                    <option>부산</option>
+                    <option>광주</option>
+                    <option>대전</option>
+                    <option>울산</option>
+                    <option>세종시</option>
+                    <option>충청북도</option>
+                    <option>제주도</option>
+                </select>
+             </div>
+            <br>
+            <div id="gender">
+                <input type="radio" id="female" name="gender_ch">
+                <label for="female">여성</label>
+                <input type="radio" id="male" name="gender_ch">
+                <label for="male">남성</label>
+            </div>
+            <br>
+            <div class="join_bt">
+                <input type="button" id="join_bt_2" value="가입하기" onclick="printform()">
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function printform (){
+            const email = document.getElementById("email_2").value;
+            console.log(email);
+            const name = document.getElementById("name_2").value;
+            console.log(name);
+            const password = document.getElementById("password__id").value;
+            console.log(password);
+            const password_2 = document.getElementById("password_2__id").value;
+            console.log(password_2);
+            const tel = document.getElementById("tel").value;
+            console.log(tel);
+            const tel_2 = document.getElementById("tel_2").value;
+            console.log(tel_2);
+            const tel_3 = document.getElementById("tel_3").value;
+            console.log(tel_3);
+            const region = document.getElementById("region").value;
+            console.log(region);
+
+            var radioButtons = document.getElementsByName("gender");
+            for (var i = 0; i < radioButtons.length; i++) {
+            if (radioButtons[i].checked) {
+            console.log(radioButtons[i].value);
+                 break;
+    }
+  }
+        }
+    </script>
+</body>
+</html>

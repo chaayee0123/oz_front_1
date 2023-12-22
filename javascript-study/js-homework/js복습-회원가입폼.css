@@ -1,0 +1,143 @@
+
+
+.container{
+    width: 350px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid rgb(211, 237, 172);
+    border-radius: 10px;
+    background-color: rgb(211, 237, 172);
+    box-shadow: 10px 10px 0px 5px rgb(148, 173, 110), 15px 15px 0px 10px rgb(192, 179, 0), 
+    20px 20px 0px 15px rgb(63, 78, 40), 25px 25px 0px 20px rgb(173, 116, 110); 
+}
+
+#email_2{
+    width: 250px;
+    height: 40px;
+    border: 3px solid rgb(148, 173, 110); 
+    border-radius: 5px;
+}
+
+#name_2{
+    width: 250px;
+    height: 40px;
+    border: 3px solid rgb(148, 173, 110); 
+    border-radius: 5px;
+
+}
+
+#password__id{
+    width: 250px;
+    height: 40px;
+    border: 3px solid rgb(148, 173, 110); 
+    border-radius: 5px;
+
+}
+
+
+#password_2__id{
+    width: 250px;
+    height: 40px;
+    border: 3px solid rgb(148, 173, 110); 
+    border-radius: 5px;
+
+}
+
+.number{
+    display: inline;
+    justify-content: center;
+}
+
+#tel{
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgb(148, 173, 110); 
+    border-radius: 5px;
+    margin-bottom: 19px;
+    margin-right: 5px;
+}
+
+#tel_2{
+    width: 70px;
+    height: 40px;
+    border: 3px solid rgb(148, 173, 110); 
+    border-radius: 5px;
+    margin : 0px 5px 19px 5px;
+    /* margin-bottom: 19px;
+    margin-left: 5px;
+    margin-right: 5px; */
+}
+
+#tel_3{
+    width: 70px;
+    height: 40px;
+    border: 3px solid rgb(148, 173, 110); 
+    border-radius: 5px;
+    margin-bottom: 19px;
+    margin-left: 5px;
+}
+
+.valid{
+    text-align: right;
+    margin-right: 43px;
+    font-size: 14px;
+}
+
+/* #num{
+    display: inline;
+    text-align: right;
+} */
+
+
+#valid_bt{
+    justify-content: right;
+    width: 100px;
+    height: 28px;
+    text-align: center;
+    border: 3px solid rgb(148, 173, 110); 
+    border-radius: 5px;
+}
+
+#valid_bt:active{
+    background-color: rgb(132, 135, 126);
+}
+
+.timer{
+    text-align: right;
+    margin-right: 43px;
+    font-size: 14px;
+}
+
+#timer_bt{
+    width: 100px;
+    height: 28px;
+    border: 3px solid rgb(148, 173, 110); 
+    border-radius: 5px;
+}
+
+#region_opt{
+    width: 250px;
+    height: 40px;
+    border: 3px solid rgb(148, 173, 110); 
+    border-radius: 5px;
+
+}
+
+#gender{
+    font-size: 14px;
+}
+
+#join_bt_2{
+    width: 250px;
+    height: 40px;
+    border: 3px solid rgb(148, 173, 110); 
+    border-radius: 5px;
+}
+
+#join_bt_2:active{
+    background-color: rgb(132, 135, 126);
+}

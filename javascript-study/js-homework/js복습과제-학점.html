@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기말고사점수와 학점</title>
+</head>
+<body>
+    
+    <div id="container"></div>
+
+    <script>
+
+        const container = document.getElementById('container');
+        let score = parseInt(prompt("기말고사 점수를 입력하세요."));
+        const p = document.createElement("p")
+        var grade;
+        
+        if (score < 60) {
+            grade = "F2";
+            p.textContent = `나의 기말고사 점수는 ${score}, 학점은 ${grade}입니다!!!!`
+            container.append(p);
+            
+        } else if(score < 70){
+            grade = "D";
+            p.textContent = `나의 기말고사 점수는 ${score}, 학점은 ${grade}입니다!!!!`
+            container.append(p);
+            
+        } else if(score < 80){
+            grade = "C";
+            p.textContent = `나의 기말고사 점수는 ${score}, 학점은 ${grade}입니다!!!!`
+            container.append(p);
+
+        } else if(score < 90){
+            grade = "B";
+            p.textContent = `나의 기말고사 점수는 ${score}, 학점은 ${grade}입니다!!!!`
+            container.append(p);
+        
+        } else {
+            grade = "A";
+            p.textContent = `나의 기말고사 점수는 ${score}, 학점은 ${grade}입니다!!!!`
+            container.append(p);
+        
+        }
+
+        
+    </script>
+</body>
+</html>
