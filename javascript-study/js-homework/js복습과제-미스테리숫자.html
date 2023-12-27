@@ -31,30 +31,30 @@
 
         
         <input type="number" id="inputNumber">
-        <button id="startbutton" onclick="btn()">뚜둥!</button>
+        <button id="startbutton" onclick="find()">뚜둥!</button>
         <p id="hint"></p>
 
 </div>
     <script>   
+        let randomNum = Math.floor(Math.random()*100) +1;
+        var hint = document.querySelector("#hint");
+        var btn = document.querySelector("#startbutton");
+        var inputValue = document.querySelector("#inputNumber");
 
-        const hint = document.querySelector("#hint");
-        const btn = document.querySelector("#startbutton");
-        const inputValue = document.querySelector("#inputNumber");
-
-        let random = Math.floor(Math.random() * 101);
-        console.log("랜덤숫자" + random);
-
-        function btn(){
-            hint.innerHTML = ""
-            console.log("사용자 숫자" + inputValue.value);
-            if(Number(inputValue.value) === random) {
-                hint.innerHTML = "잘 찍네?!정답!";
-            } else if(inputValue.value > random){   
-                hint.innerHTML = "힌트: 숫자가 커요! 줄여주세요!";
-            } else {
-                hint.innerHTML = "힌트 : 숫자가 너무 작아요! 조금 더 높여보세요!";
+        function find(){
+            var userNum = document.querySelector("#inputNumber").value;
+            if(userNum >= 1 && userNum <= 100 ){
+                if(randomNum > userNum){
+                    hint.textContent = "힌트: 숫자가 너무 작아요!조금 더 높여보세요!";
+                } else if(randomNum < userNum){
+                    hint.textContent = "힌트 : 숫자가 커요! 줄여볼까요?!"
+                } else {
+                    alert("짝짝짝 정답입니다!!!!!");
+                }
             }
         }
+
+
     </script>
 </body>
 </html>
