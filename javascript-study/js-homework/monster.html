@@ -22,7 +22,7 @@
 
         if(attackDamage > 0) {
 
-            while(attackDamage > 0) {
+            while(monsterHP > 0) {
                 monsterHP -= attackDamage;
                 attackCount += 1;
 
@@ -37,7 +37,7 @@
                     strong.innerText = `몬스터의 남은 HP는 ${monsterHP} 입니다!!!`
                 }
 
-                container.appendChild(strong);
+                container.appendChild(strong); 
             }
 
             const h2 = document.createElement("h2")
