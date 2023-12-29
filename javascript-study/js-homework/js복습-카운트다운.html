@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카운트다운</title>
+</head>
+<body>
+    <div id="container"></div>
+     <div id="thisYear"></div>
+     <button id="stop">stop</button>
+    <script>
+        const button = document.querySelector("#stop");
+
+        let timeID;
+        timeID = setInterval(function(){
+            const h1 = document.getElementById("container");
+
+            const container = new Date();
+
+       
+            h1.textContent = `현재 날짜와 시간 : ${container}`
+        }, 1000)
+
+        let lastDay;
+        lastDay = setInterval(function(){
+            const p = document.getElementById("thisYear");
+            const lastday = new Date(2023, 11, 31);
+            const today = new Date();
+            const diffDay = lastday - today;
+
+            const diffday = Math.floor(diffDay / (1000*3600)%24);
+            const diffhour = Math.floor((diffDay / (1000+60+60)) % 24);
+            const diffMin = Math.floor((diffDay / (1000*60)) %60);
+            const diffSec = Math.floor(diffDay / 1000 % 60);
+
+            p.textContent = `올해의 남은 시간 : ${diffday}일 ${diffhour}시간 ${diffMin}분 ${diffSec}초 남았습니다.`
+        }, 1000)
+
+           
+            
+            
+
+            
+
+
+        // var today = new Date();
+        // var container = document.querySelector("#container")
+       
+        // const h1 = document.createElement('h1');
+        // h1.textContent = today;
+        // container.append(h1);
+        // var thisYear = document.querySelector("#thisYear")
+
+        // function diffDay(){
+        //     var lastDay = new Date(2023,11,31);
+        //     var today = new Date();
+        //     var diff = lastDay - today;
+
+        //     const diffyear = 
+        //     const diffday = Math.floor(diff / (1000+60+60+24));
+        //     const diffhour = Math.floor((diff/ (1000+60+60)) %24);
+        //     const diffMin = Math.floor((diff / (1000*60)) %60);
+        //     const dissSec = Math.floor(diff/ 1000 % 60);
+        // }
+       
+        // const h2 = document.createElement('h2');
+        // h2.textContent = diffDay();
+        // container.append(h2);
+        
+    </script>
+</body>
+</html>
