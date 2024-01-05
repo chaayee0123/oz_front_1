@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>math</title>
+</head>
+<body>
+    <button id="draw">추첨</button>
+    <p id="number"></p>
+
+    <script>
+        const button = document.getElementById("draw")
+        const p = document.getElementById("number")
+
+        let rn = Math.random();
+
+        console.log(Math.floor(rn+10)+1);
+    </script>
+</body>
+</html>

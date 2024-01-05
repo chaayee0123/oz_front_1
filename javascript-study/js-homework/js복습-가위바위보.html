@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가위바위보</title>
+</head>
+<body>
+    <h1>가위바위보 게임</h1>
+    <p>가위, 바위, 보 중 하나를 입력하세요 : </p>
+
+    <div id="container">
+        <input type="text" id="userchoice"><button id="result">결과 확인</button>
+    </div>
+    <script>
+        const container = document.getElementById('container')
+        let resultbtn = document.getElementById('result')
+        
+        
+        resultbtn.addEventListener("click", function(){
+            var computerChoice = Math.floor(Math.random()*3)
+            let userchoice = document.getElementById('userchoice').value;
+            const p = document.createElement('p')
+            var ran1 = "";
+
+            if(userchoice == "가위"){
+                        ran1 = 0;
+                }else if(userchoice == "바위"){
+                        ran1 = 1;
+                } else if(userchoice == "보"){
+                        ran1 = 2;
+                }else {
+                        alert('가위, 바위, 보만 가능합니다.다시 입력해주세요');
+                        return;
+                }
+
+            function gameresult(){
+                if((ran1 == 1 && computerChoice == 0) || (ran1 == 2 && computerChoice == 1) || (ran1 == 0 && computerChoice == 2)){
+                        return 0;
+                } else if((ran1 == 2 && computerChoice == 0) || (ran1 == 0 && computerChoice == 1) || (ran1 == 1 && computerChoice == 2) ){
+                        return 1;
+                } else if((ran1 == 0 && computerChoice == 0) || (ran1 == 1 && computerChoice == 1) || (ran1 == 2 && computerChoice == 2)){
+                        return 2;
+                } else {
+                        alert('오류');
+                }}
+
+            var result = gameresult();
+
+            if(result == 0){
+                p.textContent = `결과 : 이겼습니다. `
+                container.append(p);
+            } else if(result == 1){
+                p.textContent = `결과 : 졌습니다. `
+                container.append(p);
+            }else {
+                p.textContent = `결과 : 비겼습니다. `
+                container.append(p);
+            }
+        })
+    </script>
+</body>
+</html>

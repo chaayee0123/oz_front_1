@@ -25,20 +25,24 @@
         let lastDay;
         lastDay = setInterval(function(){
             const p = document.getElementById("thisYear");
-            const lastday = new Date(2023, 11, 31);
-            const today = new Date();
+            const lastday = new Date("12,31,2024,23:59:59").getTime();
+            const today = Date.now();
             const diffDay = lastday - today;
 
-            const diffday = Math.floor(diffDay / (1000*3600)%24);
-            const diffhour = Math.floor((diffDay / (1000+60+60)) % 24);
-            const diffMin = Math.floor((diffDay / (1000*60)) %60);
-            const diffSec = Math.floor(diffDay / 1000 % 60);
+            const diffday = Math.floor(diffDay / (1000*3600*24));
+            const diffhour = Math.floor((diffDay % (1000*60*60*24))/ (1000 * 3600) );
+            const diffMin = Math.floor((diffDay % (1000*60*60)) / (1000*60));
+            const diffSec = Math.floor(diffDay % (1000 * 60) / 1000) ;
 
             p.textContent = `올해의 남은 시간 : ${diffday}일 ${diffhour}시간 ${diffMin}분 ${diffSec}초 남았습니다.`
         }, 1000)
 
            
-            
+        button.addEventListener("click", function(){
+            if(lastDay){
+                clearInterval(lastDay)
+            }
+        })
             
 
             
