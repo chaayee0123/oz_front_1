@@ -1,5 +1,5 @@
-let countdown;
-countdown = setInterval(function(){
+
+const countdown = setInterval(function(){
     const days = document.getElementById("day")
     const hours = document.getElementById("hour")
     const minutes = document.getElementById("minute")
