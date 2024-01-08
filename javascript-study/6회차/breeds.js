@@ -8,6 +8,7 @@ const main = document.getElementById("main")
 const input = document.getElementById("filter-text")
 const button = document.getElementById("filter-button")
 const select = document.getElementById("filter-select")
+const resetBtn = document.getElementById("reset-button")
 
 const currentDogs = []
 
@@ -87,3 +88,15 @@ tothetop.addEventListener('click', function(){
 //견종 고르는 select옆에 버튼 추가
 //버튼엔 리셋 - 해단 버튼 누르면 42마리의 소스를 새롭게 요청 받아옴
 //새로고침없이 원래 강아지는 없어지고 새로운 강아지 42마리 채우기
+resetBtn.addEventListener('click', function(){
+    main.innerHTML = ""
+    request1.open("get", apiRandomDogs)
+    request1.addEventListener("load", function(){
+        const response = JSON.parse(request1.response)
+        response.message.forEach(function(item){
+            currentDogs.push(item)
+            displayDogs(item)
+        })
+     })
+        request1.send()
+})
