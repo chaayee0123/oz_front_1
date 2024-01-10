@@ -93,18 +93,18 @@ header{
 }
 main{
     position: absolute;
-    left: 30%;
+    width: 100%;
     top: 15%;
-    margin: auto;
 }
-#main-clock{
 
+#main-clock{
+    
     font-size: 7rem;
     
 }
 
 .clock{
-    width: 13rem;
+    width: 15rem;
     height: 13rem;
     padding: 20px;
     margin: 0 28px;
@@ -112,18 +112,24 @@ main{
     background: linear-gradient(to bottom, black, grey
     );
     box-shadow: 0 0.8rem 2.5rem black;
+    align-items: center;
+    position: relative;
     
 }
 #mian-date{
     position: absolute;
-    font-size: 4rem;
+    font-size: 1.5rem;
     top: 130px;
+    left: 24%;
     margin: auto;
+    text-align: center;
+    align-items: center;
 }
 #mian-date > span{
     width: 100%;
     height: 30px;
-    margin: 0 20px;
+    align-items: center;
+    margin: 0 60px;
     text-align: center;
 }
 

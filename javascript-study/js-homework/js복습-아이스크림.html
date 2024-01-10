@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이스크림 추가 및 나열</title>
+</head>
+<body>
+    <div id="container">
+        <button type="button" id="iceAdd">아이스크림 종류 추가</button>
+        <button id="iceName">아이스크림 이름 출력</button>
+        <button id="iceList">아이스크림 목록 출력</button>
+
+        <h3>입력한 아이스크림 목록 : </h3>
+        <p id="names"></p>
+    </div>
+
+    <script>
+        const container = document.getElementById("container")
+        const iceAddBtn = document.getElementById("iceAdd")
+        const iceNameBtn = document.getElementById("iceName")
+        const iceListBtn = document.getElementById("iceList")
+        const names = document.getElementById("names")
+
+
+        let iceCream = ['누가바', '돼지바', '스크류바', '보석바'];
+
+        iceAddBtn.addEventListener("click", function(){
+            let ask = prompt('추가하고 싶은 아이스크림의 이름을 쓰시오');
+            iceCream.push(ask);
+            console.log(iceCream);
+        })
+
+        iceNameBtn.addEventListener("click", function(){
+            for(let i = 0; i < iceCream.length; i++){
+                alert(iceCream[i]);
+            }
+        })
+
+        iceListBtn.addEventListener("click", function(){
+            names.innerHTML = iceCream;
+        })
+    </script>
+</body>
+</html>

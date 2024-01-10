@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="change()">
+    <img src="images/pic0.png" id="main" style="width: 800px;height: 500px;">
+    <button type="button" id="stop">stop</button>
+
+    <script>
+        var myImage = document.getElementById("main")
+        var stopBTN = document.getElementById("stop")
+        var imageArray = ["images/pic1.png", "images/pic2.png", "images/pic3.png"];
+        var imageIndex = 0;
+
+        function changeImage(){
+            myImage.setAttribute("src", imageArray[imageIndex]);
+            imageIndex++;
+            if(imageIndex >= imageArray.length){
+                imageIndex = 0;
+            }
+        }
+        let change = setInterval(changeImage,1000);
+
+        stopBTN.addEventListener('click', function(){
+            clearInterval(change);
+        })
+    </script>
+</body>
+</html>
